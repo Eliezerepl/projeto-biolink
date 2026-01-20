@@ -4,171 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Silva | Manutenção de Alta Performance</title>
+    <title>Guilherme Silva | Link na Bio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">GUILHERME<span>SILVA</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#processo">Processo</a></li>
-                    <li><a href="#especialista">Especialista</a></li>
-                </ul>
-            </nav>
-            <a href="https://wa.me/5500000000000" class="btn-outline">CONTATO</a>
-        </div>
-    </header>
+<body class="bio-page">
+    <canvas id="hero-particles"></canvas>
+    <div class="bio-glow"></div>
 
-    <main>
-        <section class="hero">
-            <canvas id="hero-particles"></canvas>
-            <div class="hero-glow"></div>
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h2 class="badge">MANUTENÇÃO ESPECIALIZADA</h2>
-                    <h1>DOMINE A SUA <span>MÁQUINA</span></h1>
-                    <p class="hero-description">Transformamos o seu setup comum em uma estação de elite. Manutenção,
-                        otimização e montagem de alto nível para quem não aceita menos que o topo.</p>
+    <div class="bio-wrapper">
+        <header class="bio-header">
+            <div class="profile-container">
+                <div class="profile-ring"></div>
+                <img src="img/hero.png" alt="Guilherme Silva" class="profile-pic">
+                <div class="online-indicator"></div>
+            </div>
+            <h1>GUILHERME<span>SILVA</span></h1>
+            <p class="tagline">Especialista em Manutenção de Alta Performance</p>
+        </header>
 
-                    <ul class="hero-list">
-                        <li><i data-lucide="check-circle"></i> Limpeza Profunda e Repastagem</li>
-                        <li><i data-lucide="check-circle"></i> Otimização de Performance (Full FPS)</li>
-                        <li><i data-lucide="check-circle"></i> Cable Management de Elite</li>
-                    </ul>
-
-                    <a href="#contato" class="btn-primary">QUERO MEU PC RÁPIDO AGORA</a>
-                    <p class="sub-cta">Resultados garantidos em até 48h</p>
+        <main class="bio-links">
+            <a href="https://wa.me/5500000000000" class="bio-link-card featured">
+                <div class="link-icon">
+                    <i data-lucide="message-circle"></i>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="img/hero.png" alt="Técnico Guilherme Silva">
-                        <div class="stats-overlay">
-                            <div class="stat-card">
-                                <span class="stat-value">+40%</span>
-                                <span class="stat-label">FPS MÉDIO</span>
-                            </div>
-                            <div class="stat-card">
-                                <span class="stat-value">-15°C</span>
-                                <span class="stat-label">TEMPERATURA</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="link-content">
+                    <span class="link-label">AGENDAR MANUTENÇÃO</span>
+                    <span class="link-desc">Fale comigo agora no WhatsApp</span>
+                </div>
+                <div class="link-arrow">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="shimmer"></div>
+            </a>
+
+            <a href="index.html" class="bio-link-card">
+                <div class="link-icon">
+                    <i data-lucide="layout"></i>
+                </div>
+                <div class="link-content">
+                    <span class="link-label">SITE OFICIAL</span>
+                    <span class="link-desc">Conheça todos os nossos serviços</span>
+                </div>
+                <div class="link-arrow">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+            </a>
+
+            <a href="#" class="bio-link-card">
+                <div class="link-icon">
+                    <i data-lucide="instagram"></i>
+                </div>
+                <div class="link-content">
+                    <span class="link-label">INSTAGRAM</span>
+                    <span class="link-desc">Veja bastidores e setups de elite</span>
+                </div>
+                <div class="link-arrow">
+                    <i data-lucide="chevron-right"></i>
+                </div>
+            </a>
+
+            <div class="services-mini-grid">
+                <div class="service-chip">
+                    <i data-lucide="zap"></i>
+                    <span>+FPS</span>
+                </div>
+                <div class="service-chip">
+                    <i data-lucide="thermometer-snowflake"></i>
+                    <span>-Graus</span>
+                </div>
+                <div class="service-chip">
+                    <i data-lucide="shield-check"></i>
+                    <span>Garantia</span>
                 </div>
             </div>
-        </section>
+        </main>
 
-        <section class="performance" id="servicos">
-            <div class="container performance-content">
-                <div class="perf-mockup">
-                    <img src="img/app.png" alt="Monitoramento de Hardware">
-                </div>
-                <div class="perf-text">
-                    <h2>NÃO É APENAS LIMPEZA, É <span>CIÊNCIA</span></h2>
-                    <p>Muitos técnicos apenas removem a poeira. Nós analisamos cada componente, otimizamos o fluxo de ar
-                        e refinamos o sistema operacional para entregar a latência mais baixa possível.</p>
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i data-lucide="zap"></i>
-                            <h3>Overclock Seguro</h3>
-                            <p>Extraímos o máximo de clock sem comprometer a vida útil.</p>
-                        </div>
-                        <div class="feature-item">
-                            <i data-lucide="shield"></i>
-                            <h3>Proteção Avançada</h3>
-                            <p>Blindagem de software e limpeza de processos desnecessários.</p>
-                        </div>
-                    </div>
-                </div>
+        <footer class="bio-footer">
+            <div class="social-bar">
+                <a href="#"><i data-lucide="youtube"></i></a>
+                <a href="#"><i data-lucide="linkedin"></i></a>
+                <a href="#"><i data-lucide="mail"></i></a>
             </div>
-        </section>
-
-        <section class="process" id="processo">
-            <div class="container">
-                <h2 class="section-title">O CAMINHO PARA A <span>VITÓRIA</span></h2>
-                <div class="process-steps">
-                    <div class="step-card">
-                        <div class="step-number">01</div>
-                        <i data-lucide="search"></i>
-                        <h3>Diagnóstico</h3>
-                        <p>Análise completa de stress e busca por gargalos de hardware.</p>
-                        <div class="connector"></div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">02</div>
-                        <i data-lucide="settings"></i>
-                        <h3>Execução</h3>
-                        <p>Manutenção física e digital com ferramentas de ponta.</p>
-                        <div class="connector"></div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">03</div>
-                        <i data-lucide="trophy"></i>
-                        <h3>Entrega</h3>
-                        <p>Sua máquina devolvida com relatório de benchmark e garantia.</p>
-                    </div>
-                </div>
-                <div class="process-cta">
-                    <a href="#" class="btn-primary">INICIAR DIAGNÓSTICO</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="expert" id="especialista">
-            <div class="container expert-content">
-                <div class="expert-info">
-                    <h2 class="badge">O ESPECIALISTA</h2>
-                    <h3>GUILHERME <span>SILVA</span></h3>
-                    <p>Com mais de 10 anos de experiência na área de hardware entusiasta, Guilherme já transformou mais
-                        de
-                        500 setups pelo Brasil. Especialista em sistemas de refrigeração líquida e otimização para
-                        e-sports.</p>
-                    <p>Minha missão é garantir que seu hardware nunca seja o motivo da sua derrota.</p>
-                    <div class="expert-socials">
-                        <a href="#"><i data-lucide="instagram"></i></a>
-                        <a href="#"><i data-lucide="youtube"></i></a>
-                    </div>
-                </div>
-                <div class="expert-visual">
-                    <div class="expert-image-container">
-                        <img src="img/hero.png" alt="Guilherme Silva" class="expert-img">
-                        <div class="glass-tag">Guilherme Silva Founder</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="final-cta">
-            <div class="container">
-                <div class="cta-box">
-                    <h2>PRONTO PARA O PRÓXIMO <span>SALTO?</span></h2>
-                    <p>Não deixe seu investimento ser desperdiçado por falta de manutenção. Clique abaixo e agende sua
-                        revisão.</p>
-                    <a href="#" class="btn-primary large">AGENDAR AGORA</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-content">
-            <div class="logo">GUILHERME<span>SILVA</span></div>
-            <p>&copy; 2026 Guilherme Silva Manutenção. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Privacidade</a>
-                <a href="#">Termos</a>
-            </div>
-        </div>
-    </footer>
+            <p>&copy; 2026 GUILHERME SILVA</p>
+        </footer>
+    </div>
 
     <script src="js/script.js"></script>
     <script>
