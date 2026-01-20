@@ -415,9 +415,7 @@ body {
 
 .image-inner img {
     width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20px;
     border: 4px solid var(--primary);
     box-shadow: 0 0 30px var(--primary-glow);
 }
@@ -549,8 +547,8 @@ body {
 
 .expert-img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 50%;
+    max-width: 500px;
+    border-radius: 20px;
     border: 4px solid var(--primary);
 }
 
