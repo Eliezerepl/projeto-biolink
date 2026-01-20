@@ -138,8 +138,29 @@ body {
 }
 
 .bio-link-card.featured {
-    border: 2px solid var(--primary);
-    box-shadow: 0 0 30px rgba(162, 255, 0, 0.2);
+    border: 1.5px solid rgba(162, 255, 0, 0.3);
+}
+
+/* Efeito Neon ao Clicar */
+.bio-link-card:active {
+    transform: scale(0.98);
+    border-color: var(--primary);
+    background: rgba(162, 255, 0, 0.1);
+    box-shadow:
+        0 0 20px var(--primary-glow),
+        0 0 40px rgba(162, 255, 0, 0.2),
+        inset 0 0 10px rgba(162, 255, 0, 0.1);
+}
+
+.bio-link-card:active .icon-box {
+    border-color: var(--primary);
+    color: #fff;
+    background: var(--primary);
+    box-shadow: 0 0 15px var(--primary);
+}
+
+.bio-link-card:active .link-title {
+    color: var(--primary);
 }
 
 .icon-box {
@@ -153,6 +174,7 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--primary);
+    transition: var(--transition);
 }
 
 .featured .icon-box {
