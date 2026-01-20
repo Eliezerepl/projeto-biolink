@@ -700,9 +700,34 @@ body {
         gap: 1.5rem;
         text-align: center;
     }
+
+    /* Ajuste Header Mobile */
+    .main-header .header-content {
+        height: 60px;
+        /* Reduzindo a altura do menu */
+    }
+
+    .main-header .logo {
+        font-size: 1.2rem;
+        /* Logo menor para caber tudo */
+    }
+
+    .header-actions {
+        gap: 0.8rem;
+        /* Menos espaço entre os botões */
+    }
 }
 
 @media (max-width: 480px) {
+    .landing-page .container {
+        padding: 0 1rem;
+    }
+
+    .main-header .logo {
+        font-size: 1rem;
+        /* Ainda menor em celulares pequenos */
+    }
+
     .hero-text h1 {
         font-size: 2rem;
     }
@@ -717,7 +742,11 @@ body {
     }
 
     .btn-outline {
-        padding: 0.5rem 1rem;
-        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.65rem;
+    }
+
+    .btn-back {
+        font-size: 0.65rem;
     }
 }
